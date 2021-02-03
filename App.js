@@ -4,14 +4,13 @@ import { StyleSheet,TouchableOpacity, Text,Button, View,SafeAreaView, ScrollView
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import LoginScreen from './screens/Login';
-import RegisterScreen from './screens/Register';
-import WaitScreen from './screens/Wait';
-import ConfirmScreen from './screens/Confirm'
-import HomeScreen from './screens/Home'
+import RegisterScreen from './screens/Mechanic/RegisterMec';
+import WaitScreen from './screens/Mechanic/Wait';
+import ConfirmScreen from './screens/Mechanic/Confirm';
+import HomeUserScreen from './screens/User/HomeUser';
+
+
 const Stack = createStackNavigator();
-
-
-
 const Navigation = () => (
   <NavigationContainer>
     <Stack.Navigator
@@ -63,15 +62,15 @@ const Navigation = () => (
 }
         />
         <Stack.Screen
-        name="Home"
-        component={HomeScreen}
+        name="HomeUser"
+        component={HomeUserScreen}
         options={
           {
            title:null
           }
 }
-        />
-      
+
+/>
       
     </Stack.Navigator>
   </NavigationContainer>

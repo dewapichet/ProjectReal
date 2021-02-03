@@ -11,7 +11,7 @@ export default Login = ({navigation})  => {
           <Image source ={imgTitle} style={styles.image}></Image>
           <TextInput style={styles.IdInput} placeholder="ID" />
           <TextInput style={styles.PwInput} placeholder="PASSWORD" />
-          <TouchableOpacity style={styles.LogButton} >
+          <TouchableOpacity style={styles.LogButton} onPress={()=>navigation.navigate('HomeUser')} >
             <Text style={{textAlign:"center" ,paddingVertical:10}}>
               LOGIN
             </Text>
@@ -33,12 +33,14 @@ const styles = StyleSheet.create({
 
     },
     image: {
+      flex: 1,
       width:300,
       height:200,
       marginTop:60,
       marginLeft:58
     },
     IdInput:{
+      flex: 1,
       width:330,
       height:40,
       backgroundColor:"white",
@@ -48,6 +50,7 @@ const styles = StyleSheet.create({
       paddingHorizontal:16,
     },
     PwInput:{
+      flex: 1,
       width:330,
       height:40,
       backgroundColor:"white",
@@ -57,7 +60,8 @@ const styles = StyleSheet.create({
       paddingHorizontal:16,
     },
     LogButton:{
-      width:180,
+      flex:1,
+      width:200,
       height:40,
       marginLeft:120,
       marginTop:40,
@@ -65,10 +69,11 @@ const styles = StyleSheet.create({
       borderRadius:25,
     },
     RegisButton:{
-      width:180,
+      flex: 1,
+      width:200,
       height:40,
       marginLeft:120,
-      marginTop:20,
+      marginTop:40,
       backgroundColor:"#8F7070",
       borderRadius:25,
     }
