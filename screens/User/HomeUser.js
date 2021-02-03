@@ -10,7 +10,7 @@ export default HomeUser = ({navigation})  => {
       <SafeAreaView style={styles.container}>  
         
         <Text style={styles.TitleName}>Home</Text>
-           <TouchableOpacity style={styles.Search} onPress={()=>navigation.navigate('Search')}>
+           <TouchableOpacity style={styles.Search} onPress={()=>navigation.navigate('RegisterUser')}>
                 <Text style={{textAlign:"center" ,paddingVertical:10}} >ค้นหาตำแหน่งของช่าง</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.Logout} onPress={()=>navigation.navigate('Login')}>

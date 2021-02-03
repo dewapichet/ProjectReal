@@ -4,11 +4,15 @@ import { StyleSheet,TouchableOpacity, Text,Button, View,SafeAreaView, ScrollView
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import LoginScreen from './screens/Login';
-import RegisterScreen from './screens/Mechanic/RegisterMec';
+import RegisterScreen from './screens/RegisterMec';
 import WaitScreen from './screens/Mechanic/Wait';
 import ConfirmScreen from './screens/Mechanic/Confirm';
 import HomeUserScreen from './screens/User/HomeUser';
 import SearchScreen from './screens/User/Search';
+import RegisterMec from './screens/RegisterMec';
+
+
+
 
 const Stack = createStackNavigator();
 const Navigation = () => (
@@ -35,8 +39,8 @@ const Navigation = () => (
 }
         />
       <Stack.Screen
-        name="Register"
-        component={RegisterScreen}
+        name="RegisterMec"
+        component={RegisterMecScreen}
         options={
           {
            title:null
