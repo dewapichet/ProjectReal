@@ -8,7 +8,7 @@ import RegisterScreen from './screens/Mechanic/RegisterMec';
 import WaitScreen from './screens/Mechanic/Wait';
 import ConfirmScreen from './screens/Mechanic/Confirm';
 import HomeUserScreen from './screens/User/HomeUser';
-
+import SearchScreen from './screens/User/Search';
 
 const Stack = createStackNavigator();
 const Navigation = () => (
@@ -69,8 +69,20 @@ const Navigation = () => (
            title:null
           }
 }
+        />
+        <Stack.Screen
+        name="Search"
+        component={SearchScreen}
+        options={
+          {
+           title:null
+          }
+}
+        />
+        
+        
 
-/>
+
       
     </Stack.Navigator>
   </NavigationContainer>
