@@ -4,17 +4,16 @@ import { View, StyleSheet,Image, Text, SafeAreaView,TouchableOpacity, TextInput 
 
 
 
-export default HomeUser = ({navigation})  => {
+export default Register = ({navigation})  => {
     return (
-      
       <SafeAreaView style={styles.container}>  
         
-        <Text style={styles.TitleName}>Home</Text>
-           <TouchableOpacity style={styles.Search} onPress={()=>navigation.navigate('Search')}>
-                <Text style={{textAlign:"center" ,paddingVertical:10}} >ค้นหาตำแหน่งของช่าง</Text>
+        <Text style={styles.TitleName}>Register</Text>
+           <TouchableOpacity style={styles.Search} onPress={()=>navigation.navigate('User')}>
+                <Text style={{textAlign:"center" ,paddingVertical:10}} >ผู้ใช้งาน</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.Logout} onPress={()=>navigation.navigate('Login')}>
-                <Text style={{textAlign:"center" ,paddingVertical:10} } >Logout</Text>
+            <TouchableOpacity style={styles.Logout} onPress={()=>navigation.navigate('Mechanic')}>
+                <Text style={{textAlign:"center" ,paddingVertical:10} } >ช่าง</Text>
             </TouchableOpacity>
       </SafeAreaView>
       

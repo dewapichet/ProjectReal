@@ -2,30 +2,21 @@ import React, { useState } from "react";
 import { View, StyleSheet, Text, SafeAreaView,TouchableOpacity, TextInput, Button } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import { Picker } from '@react-native-community/picker';
+import axios from 'axios';
 
 
-
-export default Register = ({navigation})  => {
+export default User = ({navigation})  => {
     const[selectedValue,setSelectedValue] =useState("");
     const selectGenre = (value) => {
         setSelectedValue(value)}
     return (
       <ScrollView style={styles.container}>
             <Text style={styles.TitleName}>Register</Text>
-                <Picker selectedValue={selectedValue} onValueChange={(itemValue, itemIndex) => { selectGenre(itemValue)}} style={styles.selectGenre}>
-                    <Picker.Item enabled={false} label="ประเภทผู้ใช้" value="selectPro" />
-                    <Picker.Item label="ช่าง" value="1" />
-                    <Picker.Item label="ผู้ใช้งาน" value="2" />
-                </Picker>
             <TextInput style={styles.textInput} placeholder="ชื่อ" 
                 underlineColorAndroid={'transparent'}/>
             <TextInput style={styles.textInput} placeholder="นามสกุล" 
                 underlineColorAndroid={'transparent'}/>
-            <TextInput style={styles.textInput} placeholder="รหัสประจำตัวประชาชน" 
-                underlineColorAndroid={'transparent'}/>
             <TextInput style={styles.textInput} placeholder="เบอร์โทร" 
-                underlineColorAndroid={'transparent'}/>
-            <TextInput style={styles.textInput} placeholder="ที่อยู่" 
                 underlineColorAndroid={'transparent'}/>
             <TextInput style={styles.textInput} placeholder="ID" 
                 underlineColorAndroid={'transparent'}/>
@@ -36,7 +27,7 @@ export default Register = ({navigation})  => {
             <TouchableOpacity style={styles.ccButton} onPress={()=>navigation.navigate('Login')}>
                 <Text style={{textAlign:"center" ,paddingVertical:10}} >CANCEL</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.cfButton} onPress={()=>navigation.navigate('Confirm')}>
+            <TouchableOpacity style={styles.cfButton} onPress={()=>navigation.navigate('HomeUser')}>
                 <Text style={{textAlign:"center" ,paddingVertical:10} } >CONFIRM</Text>
             </TouchableOpacity>     
       </ScrollView>
