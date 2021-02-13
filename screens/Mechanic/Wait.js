@@ -13,7 +13,7 @@ export default Wait = ({navigation})  => {
           <Text style={styles.TextCenter}>
             รอการยืนยันตัวตนจากระบบภายใน 24 ชั่วโมง
           </Text>
-          <TouchableOpacity style={styles.cfButton} onPress={()=>navigation.navigate('Login')}>
+          <TouchableOpacity style={styles.cfButton} onPress={()=>navigation.navigate('HomeMec')}>
                 <Text style={{textAlign:"center" ,paddingVertical:10} } >CONFIRM</Text>
           </TouchableOpacity>
       </SafeAreaView>

@@ -7,39 +7,44 @@ import { View, StyleSheet,Image, Text, SafeAreaView,TouchableOpacity, TextInput 
 export default Register = ({navigation})  => {
     return (
       <SafeAreaView style={styles.container}>  
-        
-        <Text style={styles.TitleName}>Register</Text>
-           <TouchableOpacity style={styles.Search} onPress={()=>navigation.navigate('User')}>
-                <Text style={{textAlign:"center" ,paddingVertical:10}} >ผู้ใช้งาน</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.Logout} onPress={()=>navigation.navigate('Mechanic')}>
-                <Text style={{textAlign:"center" ,paddingVertical:10} } >ช่าง</Text>
-            </TouchableOpacity>
-      </SafeAreaView>
+        <View>
+      <Text style={styles.title}>
+        เลือกประเภทการสมัคร
+      </Text>
+      <View style={styles.fixToText}>
+        <Button
+          title="ผู้ใช้งาน"
+          onPress={()=>navigation.navigate('User')}/>
+        <Button
+          title="ช่างยนต์"
+          onPress={()=>navigation.navigate('Mechanic')}/>
+      </View>
+    </View>
+  </SafeAreaView>
+);
+    }
       
-    );
-  }
+
   
 const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: '#F6E4E4',
     },
-    Search:{
-      width:300,
+    title: {
+      textAlign: 'center',
+      marginVertical: 8,
+      marginTop:300,
       height:40,
-      marginLeft:60,
-      marginTop:500,
-      backgroundColor:"#8F7070",
-      borderRadius:25,
+      
     },
-      Logout:{
-        width:180,
-        height:40,
-        marginLeft:120,
-        marginTop:10,
-        backgroundColor:"#FF0F00",
-        borderRadius:25,
+    fixToText: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      marginLeft:90,
+      marginRight:90,
+      marginTop:10,
+      height:40,
     },
    
 

@@ -8,10 +8,12 @@ import LoginScreen from './screens/Login';
 import WaitScreen from './screens/Mechanic/Wait';
 import ConfirmScreen from './screens/Mechanic/Confirm';
 import HomeUserScreen from './screens/User/HomeUser';
+import HomeMecScreen from './screens/Mechanic/HomeMec';
 import SearchScreen from './screens/User/Search';
 import Mechanic from './screens/Mechanic';
 import User from './screens/User';
 import RegisterScreen from './screens/Register';
+import MapScreen from './screens/Mechanic/Maps';
 
 
 const Stack = createStackNavigator();
@@ -73,10 +75,28 @@ const Navigation = () => (
            title:null
           }
 }
+    />
+        <Stack.Screen
+        name="HomeMec"
+        component={HomeMecScreen}
+        options={
+          {
+           title:null
+          }
+}
         />
         <Stack.Screen
         name="Search"
         component={SearchScreen}
+        options={
+          {
+           title:null
+          }
+}
+      />
+        <Stack.Screen
+        name="Maps"
+        component={MapScreen}
         options={
           {
            title:null
