@@ -14,7 +14,7 @@ export default Mechanic = ({navigation})  => {
             <Text style={styles.TitleName}>Register</Text>
             <TextInput style={styles.textInput} placeholder="ชื่อ" 
                 underlineColorAndroid={'transparent'}/>
-            <TextInput style={styles.textInput} placeholder="นามสกุล" 
+            <TextInput style={styles.textInput} placeholder="นามสกุล"
                 underlineColorAndroid={'transparent'}/>
             <TextInput style={styles.textInput} placeholder="รหัสประจำตัวประชาชน" 
                 underlineColorAndroid={'transparent'}/>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "react-native";
-import { View, StyleSheet,Image, Text, SafeAreaView,TouchableOpacity, TextInput } from "react-native";
+import { View, StyleSheet,Image, Text, SafeAreaView,TouchableOpacity, TextInput,Button } from "react-native";
 
 
 

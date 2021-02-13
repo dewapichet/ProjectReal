@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "react-native";
+
 import { View, StyleSheet,Image, Text, SafeAreaView,TouchableOpacity, TextInput } from "react-native";
 
 
@@ -11,10 +11,10 @@ export default Confirm = ({navigation})  => {
           <Text style={styles.TextTitle}>
             ยืนยันตัวตนของช่าง
           </Text>
-          <TouchableOpacity style={styles.ccButton} onPress={()=>navigation.navigate('Register')}>
+          <TouchableOpacity style={styles.Register} onPress={()=>navigation.navigate('Register')}>
                 <Text style={{textAlign:"center" ,paddingVertical:10}} >CANCEL</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.cfButton} onPress={()=>navigation.navigate('Wait')}>
+            <TouchableOpacity style={styles.Wait} onPress={()=>navigation.navigate('Wait')}>
                 <Text style={{textAlign:"center" ,paddingVertical:10} } >CONFIRM</Text>
             </TouchableOpacity>  
       </SafeAreaView>
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#F6E4E4',
 
     },
-    ccButton:{
+    Register:{
       width:180,
       height:40,
       marginLeft:120,
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
       backgroundColor:"#8F7070",
       borderRadius:25,
     },
-    cfButton:{
+    Wait:{
       width:180,
       height:40,
       marginLeft:120,

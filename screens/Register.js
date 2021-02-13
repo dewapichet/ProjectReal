@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
       marginVertical: 8,
       marginTop:300,
       height:40,
+      fontSize :22,
       
     },
     fixToText: {
@@ -45,6 +46,7 @@ const styles = StyleSheet.create({
       marginRight:90,
       marginTop:10,
       height:40,
+      fontSize :20,
     },
    
 
