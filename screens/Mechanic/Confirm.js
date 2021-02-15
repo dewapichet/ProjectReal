@@ -11,6 +11,9 @@ export default Confirm = ({navigation})  => {
           <Text style={styles.TextTitle}>
             ยืนยันตัวตนของช่าง
           </Text>
+          <TouchableOpacity style={styles.Register} onPress={()=>navigation.navigate('Camera')}>
+                <Text style={{textAlign:"center" ,paddingVertical:10} } >CAMERA</Text>
+            </TouchableOpacity>
           <TouchableOpacity style={styles.Register} onPress={()=>navigation.navigate('Register')}>
                 <Text style={{textAlign:"center" ,paddingVertical:10}} >CANCEL</Text>
             </TouchableOpacity>
