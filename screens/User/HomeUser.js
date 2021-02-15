@@ -1,26 +1,29 @@
 import React, { useState } from "react";
 import { Button } from "react-native";
 import { View, StyleSheet,Image, Text, SafeAreaView,TouchableOpacity, TextInput } from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
 
 
 
 export default HomeUser = ({navigation})  => {
     return (
       
-      <SafeAreaView style={styles.container}>  
-          
+      <ScrollView style={styles.container}>  
+           
            <View style={styles.userInfoSection}>
+           <Image source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCPLADo35cXqIVjiLcDnzfoFUpnLn02M9Zxw&usqp=CAU'}}
+                  style={{width: 250, height: 200,marginLeft: 60,marginTop : -280, borderRadius:360,}} />
         <View style={styles.row}>
           
-          <Text style={{color:"#777777", marginLeft: 20}}>ชื่อ : Kathawut Mangkalad</Text>
+          <Text style={{color:"#777777", marginLeft: 30}}>ชื่อ : Kathawut Mangkalad</Text>
         </View>
         <View style={styles.row}>
         
-          <Text style={{color:"#777777", marginLeft: 20}}>เบอร์โทร : 0638256132</Text>
+          <Text style={{color:"#777777", marginLeft: 30}}>เบอร์โทร : 0638256132</Text>
         </View>
         <View style={styles.row}>
          
-          <Text style={{color:"#777777", marginLeft: 20}}>ที่อยู่ : ฟ้ามุ่ย​ 1, 19  Mae Ka,
+          <Text style={{color:"#777777", marginLeft: 30}}>ที่อยู่ : ฟ้ามุ่ย​ 1, 19  Mae Ka,
                   Mueang Phayao District, 
                   Phayao 56000</Text>
         </View>
@@ -31,7 +34,7 @@ export default HomeUser = ({navigation})  => {
             <TouchableOpacity style={styles.Logout} onPress={()=>navigation.navigate('Login')}>
                 <Text style={{textAlign:"center" ,paddingVertical:10} } >Logout</Text>
             </TouchableOpacity>
-      </SafeAreaView>
+      </ScrollView>
       
     );
   }
@@ -64,7 +67,9 @@ const styles = StyleSheet.create({
         
       },
       row: {
-        flexDirection: 'row',
-        marginBottom: 20,
+        
+        marginBottom: 10,
+        marginTop: 20,
+       
       },
   });
