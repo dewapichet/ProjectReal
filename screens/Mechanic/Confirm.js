@@ -11,9 +11,11 @@ export default Confirm = ({navigation})  => {
           <Text style={styles.TextTitle}>
             ยืนยันตัวตนของช่าง
           </Text>
-          <TouchableOpacity style={styles.Register} onPress={()=>navigation.navigate('Camera')}>
+          <View>
+          <TouchableOpacity style={styles.Camera} onPress={()=>navigation.navigate('Camera')}>
                 <Text style={{textAlign:"center" ,paddingVertical:10} } >CAMERA</Text>
-            </TouchableOpacity>
+          </TouchableOpacity>
+          </View>
           <TouchableOpacity style={styles.Register} onPress={()=>navigation.navigate('Register')}>
                 <Text style={{textAlign:"center" ,paddingVertical:10}} >CANCEL</Text>
             </TouchableOpacity>
@@ -29,7 +31,14 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: '#F6E4E4',
-
+    },
+    Camera:{
+      width:180,
+      height:40,
+      marginLeft:120,
+      marginTop:10,
+      backgroundColor:"#8F7070",
+      borderRadius:25,
     },
     Register:{
       width:180,

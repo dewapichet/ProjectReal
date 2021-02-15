@@ -36,8 +36,8 @@ export default function App() {
           </TouchableOpacity>
         </View>
       </Camera>
-      <TouchableOpacity style={styles.Logout}>
-                <Text style={{textAlign:"center"}} >Take Photo</Text>
+      <TouchableOpacity style={styles.TakePhoto}>
+                <Text style={{textAlign:"center"}} >Take Photo </Text>
             </TouchableOpacity>
     </View>
   );
@@ -45,8 +45,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width:500,
-    height:500,
   },
   camera:{
     width:"100%",
@@ -55,6 +53,15 @@ const styles = StyleSheet.create({
   text:{
     marginEnd :10,
     borderRadius:25,
-
-  }
+    
+},
+TakePhoto:{
+    width:180,
+    height:40,
+    marginLeft:120,
+    marginTop:10,
+    backgroundColor:"#8F7070",
+    borderRadius:25,
+    paddingVertical:10,
+}
 });
