@@ -8,8 +8,23 @@ export default HomeUser = ({navigation})  => {
     return (
       
       <SafeAreaView style={styles.container}>  
+          
+           <View style={styles.userInfoSection}>
+        <View style={styles.row}>
+          
+          <Text style={{color:"#777777", marginLeft: 20}}>ชื่อ : Kathawut Mangkalad</Text>
+        </View>
+        <View style={styles.row}>
         
-        <Text style={styles.TitleName}>Home</Text>
+          <Text style={{color:"#777777", marginLeft: 20}}>เบอร์โทร : 0638256132</Text>
+        </View>
+        <View style={styles.row}>
+         
+          <Text style={{color:"#777777", marginLeft: 20}}>ที่อยู่ : ฟ้ามุ่ย​ 1, 19  Mae Ka,
+                  Mueang Phayao District, 
+                  Phayao 56000</Text>
+        </View>
+      </View>
            <TouchableOpacity style={styles.Search} onPress={()=>navigation.navigate('Search')}>
                 <Text style={{textAlign:"center" ,paddingVertical:10}} >ค้นหาตำแหน่งของช่าง</Text>
             </TouchableOpacity>
@@ -30,7 +45,7 @@ const styles = StyleSheet.create({
       width:300,
       height:40,
       marginLeft:60,
-      marginTop:500,
+      marginTop:100,
       backgroundColor:"#8F7070",
       borderRadius:25,
     },
@@ -41,7 +56,15 @@ const styles = StyleSheet.create({
         marginTop:10,
         backgroundColor:"#FF0F00",
         borderRadius:25,
-    },
-   
-
+      },
+      userInfoSection: {
+        paddingHorizontal: 30,
+        marginBottom: 25,
+        marginTop:300,
+        
+      },
+      row: {
+        flexDirection: 'row',
+        marginBottom: 20,
+      },
   });

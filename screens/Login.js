@@ -37,14 +37,14 @@ const styles = StyleSheet.create({
       width:300,
       height:200,
       marginTop:60,
-      marginLeft:58
+      marginLeft:70
     },
     IdInput:{
       flex: 1,
       width:330,
       height:40,
       backgroundColor:"white",
-      marginLeft:43,
+      marginLeft:50,
       marginTop:40,
       borderRadius:25,
       paddingHorizontal:16,
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
       width:330,
       height:40,
       backgroundColor:"white",
-      marginLeft:43,
+      marginLeft:50,
       marginTop:10,
       borderRadius:25,
       paddingHorizontal:16,
