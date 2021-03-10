@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#F6E4E4',
     },
     title: {
+      
       textAlign: 'center',
       marginVertical: 8,
       marginTop:300,
@@ -40,6 +41,7 @@ const styles = StyleSheet.create({
       
     },
     fixToText: {
+      
       flexDirection: 'row',
       justifyContent: 'space-between',
       marginLeft:90,

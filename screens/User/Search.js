@@ -1,44 +1,63 @@
-import * as React from 'react';
-import MapView from 'react-native-maps';
-import Marker from 'react-native-maps';
-import { StyleSheet, Text, View, Dimensions } from 'react-native';
-import { Constants, Location, Permissions } from 'expo';
+import React, { useState } from "react";
+import { Button } from "react-native";
+import { View, StyleSheet,Image, Text, SafeAreaView,TouchableOpacity, TextInput } from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
 
-export default function Search() {
+export default function Search({navigation}) {
   
   return (
+    <ScrollView style={styles.container}>  
+    <Text style={styles.title}>
+      แจ้งเหตุผลการซ่อม
+    </Text>
+    <View>
+    <TouchableOpacity style={styles.Button} onPress={()=>navigation.navigate('Detail')}>
+          <Text style={{textAlign:"center" ,paddingVertical:10} } >รถสตาร์ทไม่ติด</Text>
+    </TouchableOpacity>
+    <TouchableOpacity style={styles.Button} onPress={()=>navigation.navigate('Detail')}>
+          <Text style={{textAlign:"center" ,paddingVertical:10} } >รถยางรั่ว</Text>
+    </TouchableOpacity>
+    <TouchableOpacity style={styles.Button} onPress={()=>navigation.navigate('Detail')}>
+          <Text style={{textAlign:"center" ,paddingVertical:10} } >เครื่องดับเอง</Text>
+    </TouchableOpacity>
+    <TouchableOpacity style={styles.Button} onPress={()=>navigation.navigate('Detail')}>
+          <Text style={{textAlign:"center" ,paddingVertical:10} } >มีเสียงแปลกๆระหว่างขับ</Text>
+    </TouchableOpacity>
+    <TouchableOpacity style={styles.Button} onPress={()=>navigation.navigate('Detail')}>
+          <Text style={{textAlign:"center" ,paddingVertical:10} } >มีน้ำหรือน้ำมันหยดที่พื้น</Text>
+    </TouchableOpacity>
+    <TouchableOpacity style={styles.Button} onPress={()=>navigation.navigate('Detail')}>
+          <Text style={{textAlign:"center" ,paddingVertical:10} } >ไม่ทราบสาเหตุ</Text>
+    </TouchableOpacity>
+    </View>
+   
+</ScrollView>
+        );
+        }
     
-    <View style={styles.container}>
-      <MapView style={styles.map}
-      initialRegion={{
-        latitude: 19.027943,
-        longitude: 99.900325,
-        latitudeDelta: 0.0100,
-        longitudeDelta: 0.0091,
-      }}
-      >
-        <MapView.Marker
-            coordinate={{latitude: 19.027500,
-            longitude: 99.8998000}}
-            title={"title"}
-            description={"description"}
-    />
-    </MapView>
-      </View>
-    
-  );
-}
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#F6E4E4',
   },
-  map: {
-    width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height,
+
+  title: {
+      
+    textAlign: 'center',
+    marginVertical: 8,
+    marginTop:50,
+    height:40,
+    fontSize :22,
   },
+  Button:{
+    width:180,
+    height:40,
+    marginLeft:120,
+    marginTop:20,
+    backgroundColor:"#1E90FF",
+    borderRadius:25,
+  },
+  
  
 });

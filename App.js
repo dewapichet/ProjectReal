@@ -15,6 +15,7 @@ import User from './screens/User';
 import RegisterScreen from './screens/Register';
 import MapScreen from './screens/Mechanic/Maps';
 import camera from './screens/Mechanic/Camera';
+import Detailsrceen from './screens/User/Detail';
 
 const Stack = createStackNavigator();
 const Navigation = () => (
@@ -124,6 +125,15 @@ const Navigation = () => (
         <Stack.Screen
         name="Camera"
         component={camera}
+        options={
+          {
+           title:null
+          }
+}
+        />
+        <Stack.Screen
+        name="Detail"
+        component={Detailsrceen}
         options={
           {
            title:null

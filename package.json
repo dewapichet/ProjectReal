@@ -15,11 +15,13 @@
     "axios": "^0.20.0",
     "expo": "~39.0.2",
     "expo-camera": "~9.0.0",
+    "expo-constants": "~9.2.0",
     "expo-google-app-auth": "^8.1.4",
     "expo-status-bar": "~1.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.3.tar.gz",
+    "react-native-check-box": "^2.1.7",
     "react-native-elements": "^3.0.0-alpha.1",
     "react-native-gesture-handler": "^1.8.0",
     "react-native-image-crop-picker": "^0.36.0",
@@ -27,8 +29,7 @@
     "react-native-reanimated": "^1.13.1",
     "react-native-safe-area-context": "3.1.4",
     "react-native-screens": "^2.11.0",
-    "react-native-web": "~0.13.12",
-    "expo-constants": "~9.2.0"
+    "react-native-web": "~0.13.12"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0"

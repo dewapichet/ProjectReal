@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
 
     },
     image: {
-      flex: 1,
+      
       width:300,
       height:200,
       marginTop:60,
@@ -61,6 +61,7 @@ const styles = StyleSheet.create({
     },
     LogButton:{
       flex:1,
+      
       width:200,
       height:40,
       marginLeft:120,

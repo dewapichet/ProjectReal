@@ -29,7 +29,7 @@ export default HomeUser = ({navigation})  => {
         </View>
       </View>
            <TouchableOpacity style={styles.Search} onPress={()=>navigation.navigate('Search')}>
-                <Text style={{textAlign:"center" ,paddingVertical:10}} >ค้นหาตำแหน่งของช่าง</Text>
+                <Text style={{textAlign:"center" ,paddingVertical:10}} >ค้นหาช่าง</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.Logout} onPress={()=>navigation.navigate('Login')}>
                 <Text style={{textAlign:"center" ,paddingVertical:10} } >Logout</Text>
@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#F6E4E4',
     },
     Search:{
+      flex: 1,
       width:300,
       height:40,
       marginLeft:60,
@@ -53,6 +54,7 @@ const styles = StyleSheet.create({
       borderRadius:25,
     },
       Logout:{
+        flex: 1,
         width:180,
         height:40,
         marginLeft:120,
@@ -61,13 +63,14 @@ const styles = StyleSheet.create({
         borderRadius:25,
       },
       userInfoSection: {
+        flex: 1,
         paddingHorizontal: 30,
         marginBottom: 25,
         marginTop:300,
         
       },
       row: {
-        
+        flex: 1,
         marginBottom: 10,
         marginTop: 20,
        
